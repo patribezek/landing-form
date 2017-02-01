@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Landing form</title>
+	<link rel="shortcut icon" href="http://www.insite-la.com/images/favicon.ico">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	
+	<!-- CUSTOM -->
+	<link rel="stylesheet" href="css/custom.css">
+
+
+</head>
+<body>
+	<div class="container">
+
+	<h1>Landing Form</h1>
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_default" aria-expanded="false" aria-controls="collapse_default">
+			Defaults
+		</button>
+
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_slides" aria-expanded="false" aria-controls="collapse_slides">
+			Slides
+		</button>
+
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_carousel_logos" aria-expanded="false" aria-controls="collapse_carousel_logos">
+			Carousel Logos
+		</button>
+		
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_productos" aria-expanded="false" aria-controls="collapse_productos">
+			Productos
+		</button>
+
+
+
+		<!--  ............................. DEFAULTS -->
+
+		<div class="collapse" id="collapse_default">
+			<div class="well">
+				<h2>Defaults</h2>
+				<form action="">
+					<label for="">Landing URL</label>
+					<input type="text" style="width:556px;">
+					<br>
+					<label for="" class="checkbox">Promo is on?</label>
+					<input type="checkbox" class="checkbox" checked="checked" >
+					<label for="" class="checkbox">Promo URL</label>
+					<input type="text" class="">
+					<br>
+					<label for="">Counter is on?</label>
+					<input type="checkbox" class="checkbox" >
+				</form>
+			</div>
+		</div>
+
+		<!-- ............................. SLIDES -->
+
+		<div class="collapse" id="collapse_slides">
+			<div class="well">
+				<h2>Slides</h2>
+				<form action="">
+					<!-- SLIDE 1 -->
+					<label for="">src_small_00</label>
+					<input type="text">
+					<br>
+					<label for="">src_medium_00</label>
+					<input type="text">
+					<br>
+					<label for="">src_large_00</label>
+					<input type="text">
+					<br>
+					<label for="">alt_00</label>
+					<input type="text">
+					<br>
+
+					<!-- SLIDE 2 -->
+					<label for="">src_small_01</label>
+					<input type="text">
+					<br>
+					<label for="">src_medium_01</label>
+					<input type="text">
+					<br>
+					<label for="">src_large_01</label>
+					<input type="text">
+					<br>
+					<label for="">alt_01</label>
+					<input type="text">
+					<br>
+
+					<!-- link -->
+					<label for="" class="checkbox" >Link </label>
+					<input type="checkbox" class="checkbox" >
+					<label for="" style="width:91px">URL</label>
+					<input type="text">
+					<br>
+					<button class="btn btn-primary">Agregar Slide</button>
+				</form>
+			</div>
+		</div>
+
+		<!--  ............................. CAROUSEL LOGOS -->
+
+		
+		<div class="collapse" id="collapse_carousel_logos">
+			<div class="well">
+				<h2>Carousel Logos</h2>
+				
+
+				<!-- los logos ya traen la info ....embed (?) -->
+
+				<div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<img src="http://lorempixel.com/150/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/151/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/152/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/153/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/154/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/155/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/156/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/157/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/158/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/159/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/151/61/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/152/62/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+				</div>
+
+				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+				<button class="btn btn-primary">Agregar logo</button>
+				<div class="hide">
+					<!-- agrega imagen y cosas del logo -->
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--  ............................. PRODUCTOS -->
+
+		<div class="collapse" id="collapse_productos">
+			<div class="well">
+				<h2>Productos</h2>
+				<form action="">
+
+					<!-- descripción -->
+					<label for="">ID</label>
+					<input type="text">
+					<br>
+					<label for="">ALT</label>
+					<input type="text">
+					<br>
+					<label for="">Title</label>
+					<input type="text">
+					<br>
+					<label for="">HREF</label>
+					<input type="text">
+					<br>
+					<!-- logo -->
+					<label for="">Logo</label>
+					<input type="text">
+					<br>
+					<label for="">Imagen</label>
+					<input type="text">
+					<br>
+				</form>
+
+				<!-- psj -->
+				<label>PSJ</label>
+				<form class="checkbox">
+					<input type="radio" class="checkbox" name="psj" value="NO" checked="checked"> NO
+					<input type="radio" class="checkbox" name="psj" value="3X"> 3X
+					<input type="radio" class="checkbox" name="psj" value="12X"> 12X
+				</form>
+
+				<!-- código -->
+				<form action="">
+					<label for="" class="checkbox">Código</label> 
+					<input type="checkbox" class="checkbox" >
+					<label for="">Texto de código</label>
+					<input type="text">
+					<br>
+					<label for="">Código descuento</label>
+					<input type="text" >
+					<br>
+
+					<!-- extra -->
+					<label for="">Extra</label> 
+					<input type="checkbox" class="checkbox" >
+					<label for="">Información adicional</label>
+					<input type="text">
+					<br>
+
+					<!-- descuento -->
+					<label for="">Descuento</label> 
+					<input type="checkbox" class="checkbox" >
+
+					<label for="">Descuento Texto</label> 
+					<input type="checkbox" class="checkbox" >
+
+					<label for="">Descuento Número</label>
+					<input type="text">
+					<br>
+					<!-- sólo texto -->
+					<label for="">Sólo texto</label> 
+					<input type="checkbox" class="checkbox" >
+
+					<label for="">Texto</label> 
+					<input type="text" >
+					<br>
+					<!-- superíndice -->
+					<label for="">Superíndice</label> 
+					<input type="checkbox" class="checkbox" >
+
+					<label for="">Nº Superíndice</label> 
+					<input type="text" >
+
+				</form>
+				<br>
+				<button class="btn btn-primary">Agregar Producto</button>
+
+			</div>
+
+		</div>
+		<!--  .............................  -->
+
+		
+
+
+	</div> <!-- FIN Container -->
+</body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/custom.js" ></script>
+
+
+</html>
