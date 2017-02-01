@@ -10,9 +10,7 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+	
 	<!-- CUSTOM -->
 	<link rel="stylesheet" href="css/custom.css">
 
@@ -48,12 +46,12 @@
 					<input type="text">
 					<br>
 					<label for="">Promo is on?</label>
-					<input type="checkbox" checked="checked">
+					<input type="checkbox" class="checkbox" checked="checked" >
 					<label for="">Promo URL</label>
-					<input type="text">
+					<input type="text" class="">
 					<br>
 					<label for="">Counter is on?</label>
-					<input type="checkbox" >
+					<input type="checkbox" class="checkbox" >
 				</form>
 			</div>
 		</div>
@@ -94,7 +92,7 @@
 
 					<!-- link -->
 					<label for="">Link</label>
-					<input type="checkbox" >
+					<input type="checkbox" class="checkbox" >
 					<label for="">URL</label>
 					<input type="text">
 					<br>
@@ -110,7 +108,31 @@
 			<div class="well">
 				<h2>Carousel Logos</h2>
 				
-<!-- posible drag and drop con base de todos los logos -->
+
+				<!-- los logos ya traen la info ....embed (?) -->
+
+				<div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<img src="http://lorempixel.com/150/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/151/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/152/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/153/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/154/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/155/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/156/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/157/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/158/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/159/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/151/61/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/152/62/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+				</div>
+
+				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+				<button>Agregar logo</button>
+				<div class="hide">
+					<!-- agrega imagen y cosas del logo -->
+				</div>
 
 			</div>
 		</div>
@@ -148,15 +170,15 @@
 				<!-- psj -->
 				<strong>PSJ</strong>
 				<form>
-					<input type="radio" name="psj" value="NO" checked="checked"> NO
-					<input type="radio" name="psj" value="3X"> 3X
-					<input type="radio" name="psj" value="12X"> 12X
+					<input type="radio" class="checkbox" name="psj" value="NO" checked="checked"> NO
+					<input type="radio" class="checkbox" name="psj" value="3X"> 3X
+					<input type="radio" class="checkbox" name="psj" value="12X"> 12X
 				</form>
 
 				<!-- código -->
 				<form action="">
 					<label for="">Código</label> 
-					<input type="checkbox" >
+					<input type="checkbox" class="checkbox" >
 					<label for="">Texto de código</label>
 					<input type="text">
 					<br>
@@ -166,31 +188,31 @@
 
 					<!-- extra -->
 					<label for="">Extra</label> 
-					<input type="checkbox" >
+					<input type="checkbox" class="checkbox" >
 					<label for="">Información adicional</label>
 					<input type="text">
 					<br>
 
 					<!-- descuento -->
 					<label for="">Descuento</label> 
-					<input type="checkbox" >
+					<input type="checkbox" class="checkbox" >
 
 					<label for="">Descuento Texto</label> 
-					<input type="checkbox" >
+					<input type="checkbox" class="checkbox" >
 
 					<label for="">Descuento Número</label>
 					<input type="text">
 					<br>
 					<!-- sólo texto -->
 					<label for="">Sólo texto</label> 
-					<input type="checkbox" >
+					<input type="checkbox" class="checkbox" >
 
 					<label for="">Texto</label> 
 					<input type="text" >
 					<br>
 					<!-- superíndice -->
 					<label for="">Superíndice</label> 
-					<input type="checkbox" >
+					<input type="checkbox" class="checkbox" >
 
 					<label for="">Nº Superíndice</label> 
 					<input type="text" >
@@ -207,9 +229,6 @@
 		
 
 
-
-
-
 	</div> <!-- FIN Container -->
 </body>
 
@@ -218,7 +237,9 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 
-
+<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/custom.js" ></script>
 
 
 </html>

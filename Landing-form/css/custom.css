@@ -9,5 +9,36 @@
 }
 .btn.btn-primary:hover{
 	box-shadow: none;
-	    transform: translate3d(2px,2px,0px);
+	transform: translate3d(2px,2px,0px);
+}
+
+label {
+	text-align: left;
+	width: 150px;
+}
+input {
+	width: 500px;
+}
+.checkbox{
+	width: initial;	
+	display: inline;
+}
+h2 {
+	    margin: 0;
+    font-size: 26px;
+    color: #ff8302;
+}
+
+.div1, .div2 {
+    float: left;
+    width: 500px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #909090;
+    overflow: scroll;
+}
+
+img{
+	padding: 2px;
 }
