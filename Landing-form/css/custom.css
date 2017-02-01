@@ -1,3 +1,15 @@
+
+body{ 
+	background-image: url(http://lorempixel.com/200/1000/);
+	background-repeat: repeat-y;
+	color:#5f5f5f;
+}
+
+.container{
+	margin-left: 200px;
+	width: 1000px;
+}
+
 .btn.btn-primary {
 	background-color: #ff8302 ;
 	border: 0;
@@ -6,6 +18,7 @@
 	border-radius: 3px;
 	box-shadow: 2px 2px 0px #9E9E9E;
 	background-image: none;
+	margin-top: 80px;
 }
 .btn.btn-primary:hover{
 	box-shadow: none;
@@ -15,6 +28,7 @@
 label {
 	text-align: left;
 	width: 150px;
+	padding: 0 5px;
 }
 input {
 	width: 500px;
@@ -24,21 +38,36 @@ input {
 	display: inline;
 }
 h2 {
-	    margin: 0;
-    font-size: 26px;
-    color: #ff8302;
+	margin: 0;
+	font-size: 26px;
+	color: #ff8302;
 }
 
 .div1, .div2 {
-    float: left;
-    width: 500px;
-    height: 200px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #909090;
-    overflow: scroll;
+	float: left;
+	width: 850px;
+	height: 200px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #909090;
+	overflow: scroll;
 }
 
 img{
 	padding: 2px;
+}
+
+.well{
+	background-image: none;
+	border-radius: 0;
+	box-shadow: 3px px 0px #9E9E9E;
+	border: none;
+}
+
+h1 {
+	font-size: 66px;
+	position: fixed;
+	z-index: -1;
+	margin: 0;
+	color: #e4e4e4;
 }

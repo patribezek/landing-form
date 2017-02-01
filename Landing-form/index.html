@@ -18,6 +18,8 @@
 </head>
 <body>
 	<div class="container">
+
+	<h1>Landing Form</h1>
 		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_default" aria-expanded="false" aria-controls="collapse_default">
 			Defaults
 		</button>
@@ -43,11 +45,11 @@
 				<h2>Defaults</h2>
 				<form action="">
 					<label for="">Landing URL</label>
-					<input type="text">
+					<input type="text" style="width:556px;">
 					<br>
-					<label for="">Promo is on?</label>
+					<label for="" class="checkbox">Promo is on?</label>
 					<input type="checkbox" class="checkbox" checked="checked" >
-					<label for="">Promo URL</label>
+					<label for="" class="checkbox">Promo URL</label>
 					<input type="text" class="">
 					<br>
 					<label for="">Counter is on?</label>
@@ -91,12 +93,12 @@
 					<br>
 
 					<!-- link -->
-					<label for="">Link</label>
+					<label for="" class="checkbox" >Link </label>
 					<input type="checkbox" class="checkbox" >
-					<label for="">URL</label>
+					<label for="" style="width:91px">URL</label>
 					<input type="text">
 					<br>
-					<button>Agregar Slide</button>
+					<button class="btn btn-primary">Agregar Slide</button>
 				</form>
 			</div>
 		</div>
@@ -129,7 +131,7 @@
 				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 
-				<button>Agregar logo</button>
+				<button class="btn btn-primary">Agregar logo</button>
 				<div class="hide">
 					<!-- agrega imagen y cosas del logo -->
 				</div>
@@ -168,8 +170,8 @@
 				</form>
 
 				<!-- psj -->
-				<strong>PSJ</strong>
-				<form>
+				<label>PSJ</label>
+				<form class="checkbox">
 					<input type="radio" class="checkbox" name="psj" value="NO" checked="checked"> NO
 					<input type="radio" class="checkbox" name="psj" value="3X"> 3X
 					<input type="radio" class="checkbox" name="psj" value="12X"> 12X
@@ -177,7 +179,7 @@
 
 				<!-- código -->
 				<form action="">
-					<label for="">Código</label> 
+					<label for="" class="checkbox">Código</label> 
 					<input type="checkbox" class="checkbox" >
 					<label for="">Texto de código</label>
 					<input type="text">
@@ -219,7 +221,7 @@
 
 				</form>
 				<br>
-				<button>Agregar Producto</button>
+				<button class="btn btn-primary">Agregar Producto</button>
 
 			</div>
 
