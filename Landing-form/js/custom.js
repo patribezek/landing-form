@@ -1,5 +1,5 @@
 
-$(document).ready(function(){
+
 
 
 	function allowDrop(ev) {
@@ -15,7 +15,8 @@ $(document).ready(function(){
 		var data = ev.dataTransfer.getData("text");
 		ev.target.appendChild(document.getElementById(data));
 	}
-
+	
+$(document).ready(function(){
 
 	var numProd = 1;
 
