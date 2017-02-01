@@ -20,6 +20,11 @@ body{
 	background-image: none;
 	margin-top: 80px;
 }
+
+.btn.btn-primary.top {
+	margin-top: 20px;
+}
+
 .btn.btn-primary:hover{
 	box-shadow: none;
 	transform: translate3d(2px,2px,0px);
@@ -32,10 +37,12 @@ label {
 }
 input {
 	width: 500px;
+	margin-bottom: 2px;
 }
 .checkbox{
 	width: initial;	
 	display: inline;
+	padding-bottom: 2px;
 }
 h2 {
 	margin: 0;
@@ -71,3 +78,4 @@ h1 {
 	margin: 0;
 	color: #e4e4e4;
 }
+
