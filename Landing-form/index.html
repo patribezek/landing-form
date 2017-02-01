@@ -17,7 +17,7 @@
 
 </head>
 <body>
-<div class="bg"></div>
+	<div class="bg"></div>
 	<div class="container">
 
 		<h1>Landing Form</h1>
@@ -63,44 +63,51 @@
 
 		<div class="collapse" id="collapse_slides">
 			<div class="well">
+
 				<h2>Slides</h2>
-				<form action="">
-					<!-- SLIDE 1 -->
-					<label for="">src_small_00</label>
-					<input type="text">
-					<br>
-					<label for="">src_medium_00</label>
-					<input type="text">
-					<br>
-					<label for="">src_large_00</label>
-					<input type="text">
-					<br>
-					<label for="">alt_00</label>
-					<input type="text">
-					<br>
+				<div class="toCloneSlide">
+					<div class="num"></div>
+					<form action="">
+						<!-- SLIDE 1 -->
+						<label for="">src_small_00</label>
+						<input type="text">
+						<br>
+						<label for="">src_medium_00</label>
+						<input type="text">
+						<br>
+						<label for="">src_large_00</label>
+						<input type="text">
+						<br>
+						<label for="">alt_00</label>
+						<input type="text">
+						<br>
 
-					<!-- SLIDE 2 -->
-					<label for="">src_small_01</label>
-					<input type="text">
-					<br>
-					<label for="">src_medium_01</label>
-					<input type="text">
-					<br>
-					<label for="">src_large_01</label>
-					<input type="text">
-					<br>
-					<label for="">alt_01</label>
-					<input type="text">
-					<br>
+						<!-- SLIDE 2 -->
+						<label for="">src_small_01</label>
+						<input type="text">
+						<br>
+						<label for="">src_medium_01</label>
+						<input type="text">
+						<br>
+						<label for="">src_large_01</label>
+						<input type="text">
+						<br>
+						<label for="">alt_01</label>
+						<input type="text">
+						<br>
 
-					<!-- link -->
-					<label for="" class="checkbox" >Link </label>
-					<input type="checkbox" class="checkbox" >
-					<label for="" style="width:91px">URL</label>
-					<input type="text">
-					<br>
-					<button class="btn btn-primary top">Agregar Slide</button>
-				</form>
+						<!-- link -->
+						<label for="" class="checkbox" >Link </label>
+						<input type="checkbox" class="checkbox" >
+						<label for="" style="width:91px">URL</label>
+						<input type="text">
+						<br>
+						
+					</form>
+				</div>
+				<div class="clonedSlide"></div>
+				<button class="btn btn-primary top agregarSlide">Agregar Slide</button>
+				
 			</div>
 		</div>
 
@@ -173,7 +180,7 @@
 					</form>
 
 					<!-- psj -->
-					<label>PSJ</label>
+					<label >PSJ</label>
 					<form class="checkbox">
 						<input type="radio" class="checkbox" name="psj" value="NO" checked="checked"> NO 
 						<input type="radio" class="checkbox" name="psj" value="3X"> 3X 
@@ -226,9 +233,9 @@
 					<br>
 					
 				</div>
-<div class="cloned"></div>
+				<div class="cloned"></div>
 			</div>
-			<button class="btn btn-primary top agregar">Agregar Producto</button>
+			<button class="btn btn-primary top agregarProd">Agregar Producto</button>
 		</div>
 		<!--  .............................  -->
 
