@@ -15,3 +15,15 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 }
+
+
+	var numProd = 1;
+
+
+$(document).ready(function(){
+    $(".agregar").click(function(){
+        $(".toClone").clone().appendTo(".cloned");
+        numProd++;
+        $(".well").append("<p>Producto Nº:" + numProd + "</p>");
+    });
+});

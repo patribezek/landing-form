@@ -21,13 +21,21 @@ body{
 	margin-top: 80px;
 }
 
+.btn.btn-primary:hover{
+	box-shadow: none;
+	transform: translate3d(2px,2px,0px);
+}
+
 .btn.btn-primary.top {
 	margin-top: 20px;
 }
 
-.btn.btn-primary:hover{
-	box-shadow: none;
-	transform: translate3d(2px,2px,0px);
+.btn.btn-primary.top.high{
+	width: 300px;
+	margin-left: 180px;
+	background-color: #ff5402 ;
+	font-size: 24px;
+
 }
 
 label {
@@ -78,4 +86,14 @@ h1 {
 	margin: 0;
 	color: #e4e4e4;
 }
+
+.toClone{
+	border-bottom: 1px solid #a3a3a3;
+	padding: 10px 0;
+}
+
+
+
+
+
 
