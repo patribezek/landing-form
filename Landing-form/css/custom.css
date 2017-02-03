@@ -5,17 +5,17 @@ body {
 }
 
 .bg {
-	background-image: url(http://lorempixel.com/200/1000/);
+	background-image: url(http://lorempixel.com/250/1000/);
 	background-repeat: repeat-y;
-	opacity: 0.5;
-	width: 200px;
+	opacity: 0.7;
+	width: 250px;
 	height: 100%;
 	position: fixed;
 	border-right: 5px solid #bdbdbd;
 }
 
 .container {
-	margin-left: 200px;
+	margin-left: 250px;
 	width: 1000px;
 }
 
@@ -23,8 +23,13 @@ input[type=text] {
 	border: transparent;
 } 
 
+input {
+	width: 500px;
+	margin-bottom: 5px;
+}
+
 .btn.btn-primary {
-	background-color: #ff8302 ;
+	background-color: #03A9F4 ;
 	border: 0;
 	width: 150px;
 	margin: 20px 5px;
@@ -56,10 +61,7 @@ label {
 	width: 150px;
 	padding: 0 5px;
 }
-input {
-	width: 500px;
-	margin-bottom: 2px;
-}
+
 .checkbox{
 	width: initial;	
 	display: inline;
@@ -126,6 +128,6 @@ h4 {
 }
 
 .mpBox {
-display: inline-block;
+	display: inline-block;
 }
 
