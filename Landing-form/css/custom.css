@@ -16,8 +16,12 @@ body {
 
 .container {
 	margin-left: 200px;
-	width: 800px;
+	width: 1000px;
 }
+
+input[type=text] {
+	border: transparent;
+} 
 
 .btn.btn-primary {
 	background-color: #ff8302 ;
@@ -67,14 +71,18 @@ h2 {
 	color: #ff8302;
 }
 
-.div1, .div2 {
-	float: left;
-	width: 700px;
+.div1, .div2, .div3 {
 	height: 200px;
 	margin: 10px;
 	padding: 10px;
 	border: 1px solid #909090;
 	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.div2 {
+	width: 45%;
+	display: inline-block;
 }
 
 img {
@@ -105,7 +113,19 @@ h1 {
 input.checkbox.chic {
 	width: 20px;
 	height: 20px;
+	display: block;
+	margin-left: 42%;
+}
 }
 
+h4 {
+	font-size: 18px;
+	margin: 0;
+	padding: 0px;
+	text-align: center;
+}
 
+.mpBox {
+display: inline-block;
+}
 

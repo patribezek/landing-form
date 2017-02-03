@@ -37,6 +37,9 @@
 			Productos
 		</button>
 
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_medios" aria-expanded="false" aria-controls="collapse_medios">
+			Medios de pago
+		</button>
 
 
 		<!--  ............................. DEFAULTS -->
@@ -136,7 +139,7 @@
 					<img src="http://lorempixel.com/152/62/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
 				</div>
 
-				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+				<div class="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 
 				<button class="btn btn-primary top ">Agregar logo</button>
@@ -162,10 +165,23 @@
 					<div class="well ">
 
 						<form class="checkbox">
-							<input type="radio" class="checkbox chic" name="mpbox" value="NO" checked="checked"> <img src="http://lorempixel.com/150/200/" alt="" class="mpbox_img"> 
-							<input type="radio" class="checkbox chic" name="mpbox" value="3X"> <img src="http://lorempixel.com/150/200/" alt="" class="mpbox_img"> 
-							<input type="radio" class="checkbox chic" name="mpbox" value="12X"> <img src="http://lorempixel.com/150/200/" alt="" class="mpbox_img"> 
-							
+
+							<!-- mpbox #1 -->
+							<div class="mpBox">
+								<img src="http://lorempixel.com/150/200/" alt="" class="mpbox_img">
+								<input type="radio" class="checkbox chic" name="mpbox" value="mpbox_01" checked="checked">  
+							</div>
+							<!-- mpbox #2 -->
+							<div class="mpBox">
+								<img src="http://lorempixel.com/150/200/" alt="" class="mpbox_img">
+								<input type="radio" class="checkbox chic" name="mpbox" value="mpbox_02"> 
+							</div>
+							<!-- mpbox #3 -->
+							<div class="mpBox">
+								<img src="http://lorempixel.com/150/200/" alt="" class="mpbox_img">  
+								<input type="radio" class="checkbox chic" name="mpbox" value="mpbox_03"> 
+							</div>
+
 						</form>
 
 
@@ -254,23 +270,65 @@
 
 					</form>
 					<br>
-					
 				</div>
 				<div class="cloned"></div>
 			</div>
 			<button class="btn btn-primary top agregarProd">Agregar Producto</button>
 		</div>
+
+		<!--  ............................. MEDIOS DE PAGO -->
+
+		<div class="collapse" id="collapse_medios">
+			<div class="well">
+				<h2>Medios de pago</h2>
+				
+
+				<!-- los logos ya traen la info ....embed (?) -->
+
+				<div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<img src="http://lorempixel.com/150/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/151/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/152/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/153/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/154/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/155/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/156/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/157/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/158/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/159/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/151/61/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/152/62/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+				</div>
+
+				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<h4>3 Cuotas</h4>
+				</div>
+				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<h4>6 Cuotas</h4>
+				</div>
+				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<h4>12 Cuotas</h4>
+				</div>
+				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<h4>18 Cuotas</h4>
+				</div>
+
+				<button class="btn btn-primary top ">Agregar logo</button>
+				<div class="hide">
+					<!-- agrega imagen y cosas del logo -->
+				</div>
+
+			</div>
+		</div>
+
+
 		<!--  .............................  -->
 
-		
-
-
 	</div> <!-- FIN Container -->
+
 	<div class="container">
 		<button class="btn btn-primary top high">Generar Landing</button>
 	</div>
-
-
 
 
 </body>
@@ -286,3 +344,4 @@
 
 
 </html>
+<!-- never give up -->
