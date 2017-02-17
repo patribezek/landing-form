@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Landing form</title>
+	<link rel="shortcut icon" href="http://www.insite-la.com/images/favicon.ico">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	
+	<!-- CUSTOM -->
+	<link rel="stylesheet" href="css/custom.css">
+
+
+</head>
+<body>
+	<div class="bg"></div>
+	<div class="container">
+
+		<h1>Landing Form</h1>
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_default" aria-expanded="false" aria-controls="collapse_default">
+			Defaults
+		</button>
+
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_slides" aria-expanded="false" aria-controls="collapse_slides">
+			Slides
+		</button>
+
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_carousel_logos" aria-expanded="false" aria-controls="collapse_carousel_logos">
+			Carousel Logos
+		</button>
+		
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_productos" aria-expanded="false" aria-controls="collapse_productos">
+			Productos
+		</button>
+
+		<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_medios" aria-expanded="false" aria-controls="collapse_medios">
+			Medios de pago
+		</button>
+
+
+		<!--  ............................. DEFAULTS -->
+<form action="" id="my" name="asd">
+		<div class="collapse" id="collapse_default">
+			<div class="well">
+				<h2>Defaults</h2>
+				
+					<label for="">Landing URL</label>
+					<input type="text" style="width:556px;" name="Landing_URL">
+					
+					<br>
+					<label for="" class="checkbox">Promo is on?</label>
+					<input type="checkbox" class="checkbox" checked="checked" name="promo" value="true">
+					<label for="" class="checkbox" value="asd">Promo URL</label>
+					<input type="text" class="" name="promo_url">
+					<br>
+					<label for="" class="checkbox">Counter is on?</label>
+					<input type="checkbox" class="checkbox" name="counter">
+					
+				<!-- </form> -->
+			</div>
+		</div>
+
+		<!-- ............................. SLIDES -->
+
+		<div class="collapse" id="collapse_slides">
+			<div class="well">
+
+				<h2>Slides</h2>
+				<div class="toCloneSlide">
+
+					<!-- <form action=""> -->
+						<!-- SLIDE 1 -->
+						<label for="">src small </label>
+						<input type="text" name="small">
+						<br>
+						<label for="">src medium </label>
+						<input type="text" name="medium">
+						<br>
+						<label for="">src large</label>
+						<input type="text" name="large">
+						<br>
+						<label for="">alt </label>
+						<input type="text" name="alt">
+						<br>
+						<br>
+					<!-- </form> -->
+				</div>
+
+				<div class="clonedSlide"></div>
+
+				<!-- link -->
+				<h4>Link</h4>
+			<!-- 	<form action=""> -->
+					<label for="" class="checkbox" >Link </label>
+					<input type="checkbox" class="checkbox"  name="link">
+					<label for="" style="width:91px">URL</label>
+					<input type="text" name="url">
+					<br>
+				<!-- </form> -->
+
+				<button class="btn btn-primary top agregarSlide">Agregar Slide</button>
+				
+			</div>
+		</div>
+
+		<!--  ............................. CAROUSEL LOGOS -->
+
+		
+		<div class="collapse" id="collapse_carousel_logos">
+			<div class="well">
+				<h2>Carousel Logos</h2>
+				
+
+				<!-- los logos ya traen la info ....embed (?) -->
+
+				<div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<img src="http://lorempixel.com/150/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/151/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/152/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/153/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/154/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/155/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/156/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/157/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/158/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/159/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/151/61/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/152/62/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+				</div>
+
+				<div class="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+				<button class="btn btn-primary top ">Agregar logo</button>
+				<div class="hide">
+					<!-- agrega imagen y cosas del logo -->
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--  ............................. PRODUCTOS -->
+
+		<div class="collapse" id="collapse_productos">
+			<div class="well ">
+				<h2>Productos</h2>
+
+				<!-- tipo de mpbox -->
+
+				<button class="btn btn-primary top" type="button" data-toggle="collapse" data-target="#collapse_mpbox" aria-expanded="false" aria-controls="collapse_mpbox">Tipos de MPBox</button>
+
+				<div class="collapse" id="collapse_mpbox">
+					<div class="well ">
+
+					<!-- 	<form class="checkbox"> -->
+
+							<!-- mpbox #1 -->
+							<div class="mpBox">
+								<img src="http://lorempixel.com/150/200/" alt="" class="mpbox_img">
+								<input type="radio" class="checkbox chic" name="mpbox" value="mpbox_01" checked="checked">  
+							</div>
+							<!-- mpbox #2 -->
+							<div class="mpBox">
+								<img src="http://lorempixel.com/150/200/" alt="" class="mpbox_img">
+								<input type="radio" class="checkbox chic" name="mpbox" value="mpbox_02"> 
+							</div>
+							<!-- mpbox #3 -->
+							<div class="mpBox">
+								<img src="http://lorempixel.com/150/200/" alt="" class="mpbox_img">  
+								<input type="radio" class="checkbox chic" name="mpbox" value="mpbox_03"> 
+							</div>
+
+					<!-- 	</form> -->
+
+
+
+					</div>
+				</div>
+
+
+				<!-- fin tipo de mpbox -->
+
+				<div class="toClone">
+					<div class="num"></div>
+					<!-- <form action=""> -->
+
+						<!-- descripción -->
+						<label for="">ID</label>
+						<input type="text" name="id">
+						<br>
+						<label for="">ALT</label>
+						<input type="text" name="alt">
+						<br>
+						<label for="">Title</label>
+						<input type="text">
+						<br>
+						<label for="">HREF</label>
+						<input type="text" name="href">
+						<br>
+						<!-- logo -->
+						<label for="">Logo</label>
+						<input type="text" name="logo">
+						<br>
+						<label for="">Imagen</label>
+						<input type="text" name="imagen">
+						<br>
+					<!-- </form>
+ -->
+					<!-- psj -->
+					<label >PSJ</label>
+					<!-- <form class="checkbox"> -->
+						<input type="radio" class="checkbox" name="psj" value="NO" checked="checked"> NO 
+						<input type="radio" class="checkbox" name="psj" value="3X"> 3X 
+						<input type="radio" class="checkbox" name="psj" value="3X"> 6X 
+						<input type="radio" class="checkbox" name="psj" value="12X"> 12X 
+					<!-- </form> -->
+
+					<!-- código -->
+					<!-- <form action=""> -->
+						<label for="" class="checkbox">Código</label> 
+						<input type="checkbox" class="checkbox" >
+						<label for="" class="checkbox">Texto de código</label>
+						<input type="text" style="width: 455px;">
+						<br>
+						<label for="">Código descuento</label>
+						<input type="text" >
+						<br>
+
+						<!-- extra -->
+						<label for="" class="checkbox">Extra</label> 
+						<input type="checkbox" class="checkbox" >
+						<label for="" class="checkbox">Información adicional</label>
+						<input type="text" style="width: 430px;">
+						<br>
+
+						<!-- descuento -->
+						<label for="" class="checkbox">Descuento</label> 
+						<input type="checkbox" class="checkbox" >
+
+						<label for="" class="checkbox">Descuento Texto</label> 
+						<input type="checkbox" class="checkbox" >
+
+						<label for="">Descuento Número</label>
+						<input type="text" style="width: 254px;">
+						<br>
+						<!-- sólo texto -->
+						<label for="" class="checkbox">Sólo texto</label> 
+						<input type="checkbox" class="checkbox" >
+
+						<label for="" class="checkbox">Texto</label> 
+						<input type="text" style="width: 506px;">
+						<br>
+						<!-- superíndice -->
+						<label for="" class="checkbox">Superíndice</label> 
+						<input type="checkbox" class="checkbox" >
+
+						<label for="" class="checkbox">Nº Superíndice</label> 
+						<input type="text" style="width: 431px;">
+
+					<!-- </form> -->
+					<br>
+				</div>
+				<div class="cloned"></div>
+			</div>
+			<button class="btn btn-primary top agregarProd">Agregar Producto</button>
+		</div>
+
+		<!--  ............................. MEDIOS DE PAGO -->
+
+		<div class="collapse" id="collapse_medios">
+			<div class="well">
+				<h2>Medios de pago</h2>
+				
+
+				<!-- los logos ya traen la info ....embed (?) -->
+
+				<div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<img src="http://lorempixel.com/150/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/151/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/152/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/153/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/154/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/155/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/156/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/157/60/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/158/60/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+					<img src="http://lorempixel.com/159/60/" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="55">
+					<img src="http://lorempixel.com/151/61/" draggable="true" ondragstart="drag(event)" id="drag2" width="150" height="55">
+					<img src="http://lorempixel.com/152/62/" draggable="true" ondragstart="drag(event)" id="drag3" width="150" height="55">
+				</div>
+
+				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<h4>3 Cuotas</h4>
+				</div>
+				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<h4>6 Cuotas</h4>
+				</div>
+				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<h4>12 Cuotas</h4>
+				</div>
+				<div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+					<h4>18 Cuotas</h4>
+				</div>
+
+				<button class="btn btn-primary top ">Agregar logo</button>
+				<div class="hide">
+					<!-- agrega imagen y cosas del logo -->
+				</div>
+
+			</div>
+		</div>
+
+
+		<!--  .............................  -->
+
+	</div> <!-- FIN Container -->
+
+	<div class="container">
+	<!-- <form action="" name="asd" id="my"> -->
+		<input class="btn btn-primary top high"  type="submit" >Generar Landing</input>
+		
+	</div>
+
+</form>
+</body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/jquery.serializejson.js"></script>
+
+<script src="js/custom.js" ></script>
+
+
+</html>
+<!-- never give up -->
